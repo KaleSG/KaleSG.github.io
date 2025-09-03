@@ -73,7 +73,7 @@ box-shadow: 0px 1px 10px 1px rgb(32, 32, 32);
     line-height: 8vw;
     color: white;
     background-color: var(--black100);
-    transition: background-color 300ms;
+    transition: background-color 500ms;
     display: inline-block;
     width: 50vw;
     margin: 0;
@@ -197,3 +197,7 @@ margin: 0;
     color: white;
     font-size: 3.4vw;
 }
+
+/* .inviscopylabel {
+display: none;
+} */
