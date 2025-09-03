@@ -30,10 +30,23 @@
         </div>
 
         <div id="contact-list">
-            <div class="contact-item"  id="what">
+            <div class="contact-item"   value="kalesuarez7267@gmail.com">
                 <img src="icons/email.png" alt="" class="contact-icon">
                 <label class="contact-text">kalesuarez7267@gmail.com</label>
             </div>
+            <div class="contact-item"   value="kalesrz@stanford.edu">
+                <img src="icons/email.png" alt="" class="contact-icon">
+                <label class="contact-text">kalesrz@stanford.edu</label>
+            </div>
+            <div class="contact-item"   value="8476503877">
+                <img src="icons/email.png" alt="" class="contact-icon">
+                <label class="contact-text">+1 (847) 650 3877</label>
+            </div>
+            <div class="contact-item"  value="https://www.linkedin.com/in/jeremiah-suarez/" onclick="window.open('https://www.linkedin.com/in/jeremiah-suarez/', '_blank');">
+                <img src="icons/email.png" alt="" class="contact-icon">
+                <label class="contact-text">linkedin.com/in/jeremiah-suarez</label>
+            </div>
+           
            
 
             </div>
@@ -46,7 +59,15 @@
 </html>
 
 <script>
-    document.getElementById("what").addEventListener("" , ()=> {
-        console.log("clicked");
-    })
+    const contactItems = document.getElementsByClassName("contact-item");
+  
+    /* loops through contacts to setup contact copy on click */
+    for (var i = 0; i<contactItems.length; i++) {
+        const item = contactItems[i];
+         item.addEventListener("mousedown", ()=>{
+            navigator.clipboard.writeText(item.getAttribute("value"))
+            
+         })
+    }
+    
 </script>
