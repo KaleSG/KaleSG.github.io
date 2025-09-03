@@ -161,7 +161,7 @@ margin: 0;
 
 
 #contact-list {
-    display: none;
+    display: flex;
     flex-direction: column;
     margin-top: 1vh;
     padding-bottom: 10px;
