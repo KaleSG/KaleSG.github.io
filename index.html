@@ -64,7 +64,7 @@
     for (const item of contactItems) {
       
         item.addEventListener("pointerup",()=>{
-            navigator.clipboard.writeText("hi")
+            navigator.clipboard.writeText(item.getAttribute("value"))
         })
     }
     
