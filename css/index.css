@@ -4,7 +4,7 @@
     --black95:  #2c2c28;
     --black90:   #43423E;
     --electric-yellow: #FFDE00;
-    --cardinal-light:  #e83951;
+    --cardinal-light:  #b1162b;
 }
 body {
     margin: 0;
@@ -36,9 +36,9 @@ body {
     background-color: rgb(46,45,41,.4);
     align-items: center;
     justify-content: center;
-    gap: 5vw;
+    gap: 2vw;
     border-radius: 5%;
-    box-shadow: 2px 1px 5px 1px rgb(46,45,41,.4);
+    box-shadow: 2px 2px 3px 2px rgb(46,45,41,.4);
     margin-left: 5vw;
     margin-top: 10vw;
     border-top: 1px solid  rgb(46,45,41,0);;
@@ -47,7 +47,7 @@ body {
 }
 
 #details {
-    height: 100vh;
+    height: 29vh;
     width: 100vw;
     border-top: 3px solid var(--cardinal-red);
     margin: 0;
@@ -64,7 +64,7 @@ font-size: 0;
 box-shadow: 0px 1px 10px 1px rgb(32, 32, 32);
 }
 .tab-button-label {
-    font-size: 3vw;
+    font-size: 3.3vw;
     text-align: center;
     line-height: 8vw;
     color: white;
@@ -84,6 +84,7 @@ transition: background-color 300ms, transform 300ms;
 }
 
 #portrait {
+    position: relative;
     width:40vw;
     height: 40vw;
     margin-left: 4vw;
@@ -91,7 +92,7 @@ transition: background-color 300ms, transform 300ms;
     background-image: url("../img/linkedinphoto.png");
     background-size: 100%;
     background-repeat: no-repeat;
-    border: var(--black100) 1px solid;
+    border: var(--black100) 3px solid;
     flex-shrink: 0;
     /* border-radius: 50%; */
     display: inline-block;
@@ -108,15 +109,18 @@ flex-direction: column;
 margin-bottom: 5vh;
 align-items: center;
 
+
 }
 
 #name {
 font-size: 5vw;
 margin-bottom: .1em;
+text-shadow: 1px 1px rgba(50, 50, 50,.5);
 }
 
 #Major {
 font-size: 3vw;
+text-shadow: 1px 1px rgba(50, 50, 50,.5);
 margin: 0;
 }
 
@@ -124,21 +128,28 @@ margin: 0;
     font-size: 2.8vw;
     margin-top: 2vw;
     text-align: center;
-    text-shadow: 1px 1px rgba(50, 50, 50,.5);
+    text-shadow: 1px 1px rgba(95, 95, 95, 0.5);
     color: white;
     white-space: wrap;
 }
 
 #resumedownload {
     text-decoration: none;
-    font-size: 2.2vw;
-    color:  var(--cardinal-red);
-    border:  var(--cardinal-red) 2px solid;
+    font-size: 2.7vw;
+    color:  var(--cardinal-light);
+    border:  var(--cardinal-light) 1px solid;
     margin-top: 1vh;
-    background: rgba(255,255,255,.1);
-    padding: .2vw;
+    background-color: rgba(69, 69, 69, 0.6);
+    padding: .7vw;
 }
 
 .stancolors {
     color: rgb(174, 18, 18)
+}
+
+#stanny {
+    position: absolute;
+    width: 8vw;
+    bottom: 1vw;
+    right: 2vw;
 }
