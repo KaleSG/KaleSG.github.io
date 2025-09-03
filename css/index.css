@@ -89,6 +89,7 @@ transition: background-color 300ms, transform 300ms;
 }
 
 
+
 #portrait {
     position: relative;
     width:40vw;
@@ -114,8 +115,6 @@ display: flex;
 flex-direction: column;
 margin-bottom: 5vh;
 align-items: center;
-
-
 }
 
 #name {
@@ -162,7 +161,7 @@ margin: 0;
 
 
 #contact-list {
-    display: flex;
+    display: none;
     flex-direction: column;
     margin-top: 1vh;
     padding-bottom: 10px;
@@ -205,4 +204,3 @@ margin: 0;
 ::selection {
 background-color: var(--cardinal-red)
 }
-
