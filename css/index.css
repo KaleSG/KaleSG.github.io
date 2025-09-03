@@ -157,3 +157,39 @@ margin: 0;
     bottom: 1vw;
     right: 2vw;
 }
+
+
+#contact-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vh;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+.contact-item {
+  width: 90vw;
+  height: 20vw;
+  background-color: var(--black100);
+  box-shadow: 0px 1px 10px 1px rgb(32, 32, 32);
+  transition: background-color 300ms;
+  display: flex;
+  align-items: center;
+  
+}
+
+.contact-item:active {
+    background-color: var(--black90);
+    transition: background-color 100ms;
+}
+
+.contact-icon {
+    width: 9vw;
+    height: 9vw;
+    padding: 5vw;
+}
+
+.contact-text {
+    color: white;
+    font-size: 3.4vw;
+}
