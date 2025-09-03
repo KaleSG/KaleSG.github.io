@@ -29,20 +29,17 @@
             <label for="contact" class="tab-button-label">Contact</label>
         </div>
 
-        <div id="contact-list">
-            <div class="contact-item"  id="idk" onclick="idk()">
+        <div id="contact-list" >
+            <div class="contact-item"  value="kalesuarez7267@gmail.com">
                 <img src="icons/email.png" alt="" class="contact-icon">
-                <input type="text" class="inviscopylabel" value="kalesuarez7267@gmail.com">
                 <label class="contact-text">kalesuarez7267@gmail.com</label>
             </div>
             <div class="contact-item"   value="kalesrz@stanford.edu">
                 <img src="icons/email.png" alt="" class="contact-icon">
-                <input type="text" class="inviscopylabel" value="kalesrz@stanford.edu">
                 <label class="contact-text">kalesrz@stanford.edu</label>
             </div>
-            <div class="contact-item">
+            <div class="contact-item" value="+18476503877">
                 <img src="icons/cell.png" alt="" class="contact-icon">
-                <input type="text" class="inviscopylabel" value="8476503877">
                 <label class="contact-text">+1 (847) 650 3877</label>
             </div>
             <div class="contact-item"  data-should-copy="false" value="https://www.linkedin.com/in/jeremiah-suarez/" onclick="window.open('https://www.linkedin.com/in/jeremiah-suarez/', '_blank');">
@@ -63,21 +60,17 @@
 
 <script>
     const contactItems = document.getElementsByClassName("contact-item");
-    /* loops through contacts to setup contact copy on click */
-
-  
+    
     for (const item of contactItems) {
-         
-         const toCopy = item.querySelector('.inviscopylabel');
-         
-         item.addEventListener("touchstart", ()=>{
-            
-            toCopy.select();
-            toCopy.setSelectionRange(0, 99999); 
-            /*navigator.clipboard.writeText(toCopy.value) */
-         })
-         
-        
+        const toCopy = item.querySelector(".contact-text")
+        item.addEventListener("pointerup",()=>{
+            const range = document.createRange();
+            range.selectNodeContents(toCopy);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+        })
     }
+    
     
 </script>

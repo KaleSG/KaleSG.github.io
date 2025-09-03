@@ -88,6 +88,7 @@ transform: scale(1.05);
 transition: background-color 300ms, transform 300ms;
 }
 
+
 #portrait {
     position: relative;
     width:40vw;
@@ -171,6 +172,8 @@ margin: 0;
     overflow:scroll;
        gap: 3vw;
 }
+    
+
 .contact-item {
   width: 95vw;
   height: 15vw;
@@ -196,8 +199,10 @@ margin: 0;
 .contact-text {
     color: white;
     font-size: 3.4vw;
+    
 }
 
-/* .inviscopylabel {
-display: none;
-} */
+::selection {
+background-color: var(--cardinal-red)
+}
+
