@@ -139,7 +139,7 @@ margin: 0;
     color:  var(--cardinal-light);
     border:  var(--cardinal-light) 1px solid;
     margin-top: 1vh;
-    background-color: rgba(69, 69, 69, 0.6);
+    background-color: rgba(111, 111, 111, 0.6);
     padding: .7vw;
 }
 
