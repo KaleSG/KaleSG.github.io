@@ -62,13 +62,9 @@
     const contactItems = document.getElementsByClassName("contact-item");
     
     for (const item of contactItems) {
-        const toCopy = item.querySelector(".contact-text")
+      
         item.addEventListener("pointerup",()=>{
-            const range = document.createRange();
-            range.selectNodeContents(toCopy);
-            const selection = window.getSelection();
-            selection.removeAllRanges();
-            selection.addRange(range);
+            navigator.clipboard.writeText("hi")
         })
     }
     
