@@ -318,11 +318,8 @@ display: flex;
 .abtdesc {
     width: 91vw;
     height: fit-content;
+    font-size: 3vw;
     padding: 2vw;
     box-shadow: 1px 1px 10px 1px rgb(32, 32, 32);
 }
 
-#wmidec {
-   
-    
-}
