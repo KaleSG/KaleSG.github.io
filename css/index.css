@@ -32,7 +32,7 @@ height: 100vh;
 }
 
 #intro {
-    
+    container-type: inline-size;
     background-image: url("../img/workstation.webp");
     height: 70cqw;
     border-top: 1px solid black;
