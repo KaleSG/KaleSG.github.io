@@ -29,6 +29,21 @@
             <label for="contact" class="tab-button-label" onclick="contactButton()" >Contact</label>
         </div>
 
+        <div id="aboutme">
+            <div id="bio" class="aboutme-section">
+                <h1 class = "abtheading">A Basic Introduction</h1>
+                <div class="abtdesc" id="wmidesc" >WHAT</div>
+                
+            </div>
+            <div  class="aboutme-section">
+                <h1 class = "abtheading">My Goals</h1>
+                <div class="abtdesc">WHAT</div>
+                
+            </div>
+
+            
+        </div>
+
         <div id="contact-list" >
 
             <div id="contact-card-div" class = "contact-div" download="downloads-linktos/KaleSuarez.vcf" onclick="window.location.href='downloads-linktos/KaleSuarez.vcf';">
@@ -116,6 +131,8 @@ document.getElementById("about").checked = true;
 
 function aboutButton() {
     document.getElementById("contact-list").style.display = "none";
+    document.getElementById("aboutme").style.display = "flex";
+
 }
 
 </script>

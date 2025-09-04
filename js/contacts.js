@@ -21,6 +21,7 @@ const contactDivs = document.getElementsByClassName("contact-div");
 
 /* contact tab show */
 function contactButton() {
+    document.getElementById("aboutme").style.display = "none";
     for (const item of contactDivs) {
         item.style.visibility = "hidden";
         item.classList.add("contact-hidden");
