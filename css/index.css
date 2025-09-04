@@ -224,7 +224,7 @@ margin: 0;
 .contact-hidden.contact-shown {
     opacity: 1;
     visibility: visible;
-    transition: opacity 300ms ease-in;
+    transition: opacity 300ms ease-in, transform 500ms;
 }
 
 
@@ -335,9 +335,7 @@ display: flex;
     box-shadow: 1px 1px 10px 1px rgb(32, 32, 32);
 }
 
-.contact-div {
-    transition: transform 500ms, background-color 500ms;
-}
+
 .contact-div:active {
     transition: transform 100ms, background-color 100ms;
     transform: scale(.95);
