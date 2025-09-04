@@ -152,18 +152,26 @@ margin: 0;
 
 
 #resumedownload {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
-    font-size: 3vw;
-    color:  var(--cardinal-light);
-    border:  var(--cardinal-light) 1px solid;
+    font-size: 2.5vw;
+    color:  white;
+    border:  white 1px solid;
     margin-top: 1vh;
-    background-color: rgba(83, 83, 83, 0.6);
+    background-color: rgba(120, 120, 120, 0.5);
     padding: .7vw;
     margin-top: 3vh;
     
 }
 
-
+#resumedownload > img {
+    width: 5vw;
+    margin-right: 1vw;
+   
+}
 
 .stancolors {
     color: rgb(196, 11, 11)
