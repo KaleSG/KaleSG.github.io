@@ -217,11 +217,14 @@ margin: 0;
 
 .contact-hidden {
     opacity: 0;
+    visibility: hidden;
+    transition: opacity 300ms ease-in;
 }
 
-.contact-shown {
+.contact-hidden.contact-shown {
     opacity: 1;
-    transition: opacity 800ms;
+    visibility: visible;
+    transition: opacity 300ms ease-in;
 }
 
 

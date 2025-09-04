@@ -18,22 +18,24 @@ const contactDivs = document.getElementsByClassName("contact-div");
     }
     
 
-
+    for (const item of contactDivs) item.classList.add("contact-hidden");
 /* contact tab show */
 function contactButton() {
     document.getElementById("aboutme").style.display = "none";
-    for (const item of contactDivs) {
-        item.style.visibility = "hidden";
-        item.classList.add("contact-hidden");
+   
+    for (const item of contactDivs) 
         item.classList.remove("contact-shown");
-    }
+        
+    
     document.getElementById("contact-list").style.display = "flex";
     for (var i = 0; i < contactDivs.length; i++) {
         const item = contactDivs[i];
+        
         setTimeout(() => {
-            item.style.visibility = "visible";
-            item.classList.remove("contact-hidden");
-            item.classList.add("contact-shown");
+            
+             item.classList.add("contact-shown");
+            
+            
     }, i * 100);
     }
 }
