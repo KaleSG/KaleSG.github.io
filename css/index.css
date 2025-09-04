@@ -25,7 +25,7 @@ body {
 
 #intro {
     
-    background-image: url("../img/workstation.png");
+    background-image: url("../img/workstation.webp");
     height: 71vw;
     border-top: 1px solid black;
     width: 100vw;
@@ -116,7 +116,7 @@ transition: background-color 300ms, transform 300ms;
     height: 40vw;
     margin-left: 4vw;
     border-radius: 50%;
-    background-image: url("../img/linkedinphoto.png");
+    background-image: url("../img/linkedinphoto.webp");
     background-size: 100%;
     background-repeat: no-repeat;
     border: var(--black100) 3px solid;
