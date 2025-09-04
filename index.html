@@ -33,14 +33,26 @@
             <div class="contact-item"  value="kalesuarez7267@gmail.com">
                 <img src="icons/email.png" alt="" class="contact-icon">
                 <label class="contact-text">kalesuarez7267@gmail.com</label>
+                <div class="clipboard-hold">
+                    <img src="icons/clipboard.png" class="clipboard-icon" alt="" class="contact-icon">
+                    <div class="copied-under">Copied!</div>
+                </div>
             </div>
             <div class="contact-item"   value="kalesrz@stanford.edu">
                 <img src="icons/email.png" alt="" class="contact-icon">
                 <label class="contact-text">kalesrz@stanford.edu</label>
+                <div class="clipboard-hold">
+                    <img src="icons/clipboard.png" class="clipboard-icon" alt="" class="contact-icon">
+                    <div class="copied-under">Copied!</div>
+                </div>
             </div>
             <div class="contact-item" value="+18476503877">
                 <img src="icons/cell.png" alt="" class="contact-icon">
                 <label class="contact-text">+1 (847) 650 3877</label>
+                <div class="clipboard-hold">
+                    <img src="icons/clipboard.png" class="clipboard-icon" alt="" class="contact-icon">
+                    <div class="copied-under">Copied!</div>
+                </div>
             </div>
             <div class="contact-item"  data-should-copy="false" value="https://www.linkedin.com/in/jeremiah-suarez/" onclick="window.open('https://www.linkedin.com/in/jeremiah-suarez/', '_blank');">
                 <img src="icons/linkedin.png" alt="" class="contact-icon">
@@ -62,9 +74,12 @@
     const contactItems = document.getElementsByClassName("contact-item");
     
     for (const item of contactItems) {
-      
+        if (item.getAttribute("data-should-copy") == "false") continue;
+        const copyUnder = item.querySelector(".clipboard-hold").querySelector(".copied-under");
+        console.log(copyUnder);
         item.addEventListener("pointerup",()=>{
             navigator.clipboard.writeText(item.getAttribute("value"))
+            copyUnder.style.display = "inline";
         })
     }
     
