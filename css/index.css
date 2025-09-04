@@ -223,7 +223,6 @@ background-color: var(--cardinal-red)
 }
 
 .copied-under {
-margin-top: 1vw;
 color: var(--black50);
 display: none;
 position: absolute;
