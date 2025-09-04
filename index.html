@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/index.css">
     <title>Kale Suarez - B.S Electrical Engineering </title>
 </head>
+
 <body>
 
     <div id="intro" class="section">
@@ -16,7 +18,8 @@
             <div id="blurbtext">
                 <h1 id="name">Kale Suarez</h1>
                 <h1 id="Major">Electrical Engineering B.S </h1>
-    
+                <h1 id="undergrad-text">First-Year Undergraduate</h1>
+
                 <a id="resumedownload" href="downloads-linktos/KaleSuarez.vcf" download="KaleSuarez.vcf">
                     <img src="icons/download.png" alt="">
                     PDF Resume
@@ -29,63 +32,67 @@
             <input type="radio" name="tab-buttons" id="about" class="tab-button-input" checked>
             <label for="about" class="tab-button-label" onclick="aboutButton()">About Me</label>
             <input type="radio" name="tab-buttons" id="contact" class="tab-button-input">
-            <label for="contact" class="tab-button-label" onclick="contactButton()" >Contact</label>
+            <label for="contact" class="tab-button-label" onclick="contactButton()">Contact</label>
         </div>
 
         <div id="aboutme">
             <div id="bio" class="aboutme-section">
-                <h1 class = "abtheading">A Basic Introduction</h1>
-                <div class="abtdesc" id="wmidesc" >
-                    I am a first-generation college student pursuing a B.S in Electrical Engineering at Stanford University. I am from Elgin, Illinois.
+                <h1 class="abtheading">A Basic Introduction</h1>
+                <div class="abtdesc" id="wmidesc">
+                    I am a first-generation college student pursuing a B.S in Electrical Engineering at <b class="no-wrap-phrase">Stanford University</b>.
                 </div>
-                
-            </div>
-            <div  class="aboutme-section">
-                <h1 class = "abtheading">Goals</h1>
-                <div class="abtdesc">
-                    I am currently looking to build experience through an internship and/or mentorship in the field of electrical engineering. 
 
-                    <br><br>I am interested in almost every speciality from 
+            </div>
+            <div class="aboutme-section">
+                <h1 class="abtheading">Goals</h1>
+                <div class="abtdesc">
+                    I am currently looking to build experience through an internship and/or mentorship in the field of
+                    electrical engineering.
+
+                    <br>
+                    <br>
+                    I am interested in almost every speciality from
                     IC design, RF communications, VLSI, DSP, power electronics, and alternative energy.
                     I hope to one day use my skills to develop technologies for societal embetterment.
                 </div>
-                
-            </div>
-            
 
-            
+            </div>
+
+
+
         </div>
 
-        <div id="contact-list" >
+        <div id="contact-list">
 
-            <div id="contact-card-div" class = "contact-div" download="downloads-linktos/KaleSuarez.vcf" onclick="window.location.href='downloads-linktos/KaleSuarez.vcf';">
+            <div id="contact-card-div" class="contact-div" download="downloads-linktos/KaleSuarez.vcf"
+                onclick="window.location.href='downloads-linktos/KaleSuarez.vcf';">
                 <img class="contact-icon" src="icons/id-card.png" alt="">
                 <label class="contact-text">Contact Card</label>
             </div>
 
-            <div class="contact-item contact-div"  value="kalesuarez7267@gmail.com">
+            <div class="contact-item contact-div" value="kalesuarez7267@gmail.com">
                 <div class="contact-left-aligned contact-half">
                     <img src="icons/email.png" alt="" class="contact-icon">
                     <label class="contact-text">kalesuarez7267@gmail.com</label>
-                    
+
                 </div>
-                
+
                 <div class="contact-right-aligned contact-half">
                     <div class="clipboard-hold">
                         <img src="icons/clipboard.png" class="clipboard-icon" alt="" class="contact-icon">
                         <div class="copied-under">Copied!</div>
                     </div>
                 </div>
-                
-                
+
+
             </div>
-            <div class="contact-item contact-div"   value="kalesrz@stanford.edu">
-            
+            <div class="contact-item contact-div" value="kalesrz@stanford.edu">
+
                 <div class="contact-left-aligned contact-half">
                     <img src="icons/email.png" alt="" class="contact-icon">
                     <label class="contact-text">kalesrz@stanford.edu</label>
                 </div>
-                
+
                 <div class="contact-right-aligned contact-half">
                     <div class="clipboard-hold">
                         <img src="icons/clipboard.png" class="clipboard-icon" alt="" class="contact-icon">
@@ -94,12 +101,12 @@
                 </div>
             </div>
             <div class="contact-item contact-div" value="+18476503877">
-            
+
                 <div class="contact-left-aligned contact-half">
                     <img src="icons/cell.png" alt="" class="contact-icon">
                     <label class="contact-text">+1 (847) 650 3877</label>
                 </div>
-               
+
                 <div class="contact-right-aligned contact-half">
                     <div class="clipboard-hold">
                         <img src="icons/clipboard.png" class="clipboard-icon" alt="" class="contact-icon">
@@ -107,29 +114,31 @@
                     </div>
                 </div>
             </div>
-            
-            
-            <div class="contact-item contact-div"  data-should-copy="false" value="https://www.linkedin.com/in/jeremiah-suarez/" onclick="window.open('https://www.linkedin.com/in/jeremiah-suarez/', '_blank');">
+
+
+            <div class="contact-item contact-div" data-should-copy="false"
+                value="https://www.linkedin.com/in/jeremiah-suarez/"
+                onclick="window.open('https://www.linkedin.com/in/jeremiah-suarez/', '_blank');">
                 <div class="contact-left-aligned contact-half">
                     <img src="icons/linkedin.png" alt="" class="contact-icon">
                     <label class="contact-text">linkedin.com/in/jeremiah-suarez</label>
                 </div>
-                
+
                 <div class="contact-right-aligned contact-half">
-                    
+
                 </div>
-                
-            </div>
-            
-            
-           
-           
 
             </div>
+
+
+
+
+
         </div>
+    </div>
 
     </div>
-    
+
 </body>
 
 </html>
@@ -137,16 +146,16 @@
 <script src="/js/contacts.js"></script>
 <script>
 
-/* auto set checked about me tab */
-document.getElementById("about").checked = true;
+    /* auto set checked about me tab */
+    document.getElementById("about").checked = true;
 
 
-function aboutButton() {
-    document.getElementById("contact-list").style.display = "none";
-    const contactDivs = document.getElementsByClassName("contact-div");
-    
-    document.getElementById("aboutme").style.display = "flex";
+    function aboutButton() {
+        document.getElementById("contact-list").style.display = "none";
+        const contactDivs = document.getElementsByClassName("contact-div");
 
-}
+        document.getElementById("aboutme").style.display = "flex";
+
+    }
 
 </script>
