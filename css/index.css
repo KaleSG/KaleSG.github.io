@@ -41,6 +41,7 @@ body {
     width: 93vw;
     display: flex;
     height: 51vw;
+    padding: 1.5vw;
     background-color: rgba(47, 47, 47, 0.7);
     align-items: center;
     justify-content: center;
