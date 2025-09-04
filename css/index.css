@@ -221,6 +221,7 @@ margin: 0;
 .contact-text {
     color: white;
     font-size: 3.4vw;
+    white-space: nowrap;
     
 }
 
@@ -230,23 +231,45 @@ background-color: var(--cardinal-red)
 
 .clipboard-icon {
     width: 6vw;
+    margin-bottom: 1vw;
 }
 
 .clipboard-hold {
-    position: absolute;
     display: flex;
+    margin-top: 2.5vh;
+    
     font-size: 2.5vw;
     flex-direction: column;
+    margin-right: 3vw;
     align-items: center;
-    right: 7vw;
+    
+    
    
 }
 
 .copied-under {
 color: var(--black50);
-display: none;
-position: absolute;
-transform: translateY(5.6vw);
+visibility: hidden;
 
 
+}
+
+.contact-half {
+height: 100%;
+width: 50%;
+}
+
+.contact-left-aligned {
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    }
+    
+.contact-right-aligned {
+
+justify-content: right;
+align-items: center;
+display: flex;
 }

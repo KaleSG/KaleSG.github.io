@@ -6,9 +6,9 @@ const contactItems = document.getElementsByClassName("contact-item");
         console.log(copyUnder);
         item.addEventListener("pointerup",()=>{
             navigator.clipboard.writeText(item.getAttribute("value"))
-            copyUnder.style.display = "inline";
+            copyUnder.style.visibility = "visible";
             setTimeout(()=>{
-                copyUnder.style.display = "none";
+                copyUnder.style.visibility = "hidden";
             }, 1200);
         })
     }
