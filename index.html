@@ -80,6 +80,9 @@
         item.addEventListener("pointerup",()=>{
             navigator.clipboard.writeText(item.getAttribute("value"))
             copyUnder.style.display = "inline";
+            setTimeout(()=>{
+                copyUnder.style.display = "none";
+            }, 1200);
         })
     }
     
