@@ -207,6 +207,7 @@ margin: 0;
   align-items: center;
   margin: 0;
   
+  
 }
 
 .contact-hidden {
@@ -220,7 +221,6 @@ margin: 0;
 
 .contact-item:active {
     background-color: var(--black90);
-    transition: background-color 100ms;
 }
 
 .contact-icon {
@@ -334,3 +334,10 @@ display: flex;
     box-shadow: 1px 1px 10px 1px rgb(32, 32, 32);
 }
 
+.contact-div {
+    transition: transform 500ms;
+}
+.contact-div:active {
+    transition: transform 100ms;
+    transform: scale(.95);
+}
