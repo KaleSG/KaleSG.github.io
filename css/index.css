@@ -294,16 +294,18 @@ display: flex;
 
 #aboutme {
    
-    min-height: 29vh;
+   
     display: flex;
     flex-direction: column;
-    justify-content: top;
+    min-height:fit-content;
+    margin-bottom: 2vh;
     align-items: center;
 }
 
 .aboutme-section {
     
     width: 95vw;
+    
     color:white;
     display: flex;
     flex-direction: column;
