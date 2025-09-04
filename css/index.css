@@ -15,44 +15,51 @@ body {
     overflow-x: hidden;
     max-width: 100vw;
     user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
 
 .section {
-    width: 100vw;
+    width: 100%;
     margin: 0;
+}
+
+#mainbody {
+width: 100vw;
+height: 100vh;
 }
 
 #intro {
     
     background-image: url("../img/workstation.webp");
-    height: 71vw;
+    height: 70cqw;
     border-top: 1px solid black;
-    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-size: 100vw;
+    background-size: 100%;
     background-repeat: no-repeat;
     filter: brightness(1.1);
 }
 
 #blurb {
-    width: 93vw;
+    width: 93cqw;
     display: flex;
-    height: 51vw;
-    padding: 1.5vw;
+    height: 55cqw;
+    padding: 1.5cqw;
     background-color: rgba(28, 27, 27, 0.7);
     align-items: center;
     justify-content: center;
-    gap: 2vw;
+    gap: 2cqw;
     border-radius: 3%;
     box-shadow: 2px 2px 3px 2px rgb(46,45,41,.4);
     border-top: 1px solid  rgb(46,45,41,0);;
     white-space: nowrap;
     
     animation-name: slightFloat;
-    animation-duration: 3s;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     
@@ -71,8 +78,8 @@ body {
    }
 
 #details {
-    min-height: 29vh;
-    width: 100vw;
+    min-height: 67vh;
+    width: 100%;
     border-top: 3px solid var(--cardinal-red);
     margin: 0;
     background-color: var(--black100);
@@ -90,14 +97,14 @@ font-size: 0;
 box-shadow: 0px 1px 10px 1px rgb(32, 32, 32);
 }
 .tab-button-label {
-    font-size: 3.3vw;
+    font-size: 3.3cqw;
     text-align: center;
-    line-height: 8vw;
+    line-height: 10cqw;
     color: white;
     background-color: var(--black100);
     transition: background-color 500ms;
     display: inline-block;
-    width: 50vw;
+    width: 50%;
     margin: 0;
     box-sizing: border-box;
  
@@ -114,8 +121,8 @@ transition: background-color 300ms, transform 300ms;
 
 #portrait {
     position: relative;
-    width:40vw;
-    height: 40vw;
+    width:40cqw;
+    height: 40cqw;
     border-radius: 50%;
     background-image: url("../img/linkedinphoto.webp");
     background-size: 100%;
@@ -134,18 +141,18 @@ color: white;
 opacity: 1;
 display: flex;
 flex-direction: column;
-margin-bottom: 5vh;
+margin-bottom: 5cqw;
 align-items: center;
 }
 
 #name {
-font-size: 5vw;
+font-size: 5cqw;
 margin-bottom: .1em;
 text-shadow: 1px 1px rgba(50, 50, 50,.5);
 }
 
 #Major {
-font-size: 3vw;
+font-size: 3cqw;
 text-shadow: 1px 1px rgba(50, 50, 50,.5);
 margin: 0;
 }
@@ -157,14 +164,13 @@ margin: 0;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    font-size: 2.5vw;
+    font-size: 2.5cqw;
     color:  white;
     border:  white 1px solid;
-    margin-top: 1vh;
     background-color: rgba(120, 120, 120, 0.5);
-    padding: .7vw;
+    padding: .7cqw;
     transition: transform 200ms;
-    margin-top: 3vh;
+    margin-top: 3cqw;
     
 }
 
@@ -174,8 +180,8 @@ margin: 0;
 }
 
 #resumedownload > img {
-    width: 5vw;
-    margin-right: 1vw;
+    width: 5cqw;
+    margin-right: 1cqw;
    
 }
 
@@ -185,32 +191,33 @@ margin: 0;
 
 #stanny {
     position: absolute;
-    width: 8vw;
-    bottom: 1vw;
-    right: 2vw;
+    width: 8cqw;
+    bottom: 1cqw;
+    right: 2cqw;
 }
 
 
 #contact-list {
     display: none;
     flex-direction: column;
-    margin-top: 1vh;
+    margin-top: 3cqw;
     padding-bottom: 10px;
-    padding-top: 10px;
+ 
     align-items: center;
     
     overflow:scroll;
-       gap: 3vw;
+    
 }
     
 
 .contact-item {
-  width: 95vw;
-  height: 15vw;
+  width: 95%;
+  height: 17cqw;
   box-shadow: 0px 1px 10px 1px rgb(32, 32, 32);
   display: flex;
   align-items: center;
   margin: 0;
+  margin-top: 2cqw;
   
   
 }
@@ -229,8 +236,8 @@ margin: 0;
 
 
 .contact-icon {
-    width: 9vw;
-    height: 9vw;
+    width: 9cqw;
+    height: 9qw;
     padding: 5vw;
 }
 
@@ -246,17 +253,18 @@ background-color: var(--cardinal-red)
 }
 
 .clipboard-icon {
-    width: 6vw;
-    margin-bottom: .25vw;
+    width: 100%;
+    margin-bottom: .25%;
 }
 
 .clipboard-hold {
     display: flex;
-    margin-top: 1.5vh;
+    margin-top: 5%;
+    width: 15%;
     
-    font-size: 2.5vw;
+    font-size: 2.5cqw;
     flex-direction: column;
-    margin-right: 3vw;
+    margin-right: 5%;
     align-items: center;
     
     
@@ -291,15 +299,20 @@ display: flex;
 }
 
 #contact-card-div {
-    width: 50vw;
-    height: 15vw;
+    width: 50cqw;
+    height: 15cqw;
     box-shadow: 0px 1px 10px 1px rgb(32, 32, 32);
     display: flex;
     align-items: center;
     color: white;
 }
 
-
+#bottom-show-div {
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
 
 #aboutme {
    
@@ -307,31 +320,37 @@ display: flex;
     display: flex;
     flex-direction: column;
     min-height:fit-content;
+    max-width: 100%;
     margin-bottom: 2vh;
     align-items: center;
+    justify-content: center;
 }
 
 .aboutme-section {
     
-    width: 95vw;
+    
     
     color:white;
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: center;
+    
+    max-width: 95%;
     margin-bottom: 1vh;
+    
     
 }
 
 .abtheading {
-    font-size: 5vw;
+    font-size: 5cqw;
+    width: 100%;
 
 }
 .abtdesc {
-    width: 91vw;
+    width: 96%;
     height: fit-content;
-    font-size: 3vw;
-    padding: 2vw;
+    font-size: 3cqw;
+    padding: 2%;
     box-shadow: 1px 1px 10px 1px rgb(32, 32, 32);
 }
 
@@ -343,7 +362,7 @@ display: flex;
 }
 
 #undergrad-text {
-    font-size: 3vw;
+    font-size: 3cqw;
     text-shadow: 1px 1px rgba(50, 50, 50,.5);
     margin: 0;
     color: wheat
