@@ -29,23 +29,24 @@ body {
     height: 71vw;
     border-top: 1px solid black;
     width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-size: 100vw;
     background-repeat: no-repeat;
     filter: brightness(1.1);
 }
 
 #blurb {
-    width: 90vw;
+    width: 93vw;
     display: flex;
     height: 51vw;
-    background-color: rgb(46,45,41,.4);
+    background-color: rgba(47, 47, 47, 0.7);
     align-items: center;
     justify-content: center;
     gap: 2vw;
     border-radius: 5%;
     box-shadow: 2px 2px 3px 2px rgb(46,45,41,.4);
-    margin-left: 5vw;
-    margin-top: 10vw;
     border-top: 1px solid  rgb(46,45,41,0);;
     white-space: nowrap;
     
@@ -69,7 +70,7 @@ body {
    }
 
 #details {
-    height: 80vh;
+    min-height: 29vh;
     width: 100vw;
     border-top: 3px solid var(--cardinal-red);
     margin: 0;
@@ -114,7 +115,7 @@ transition: background-color 300ms, transform 300ms;
     position: relative;
     width:40vw;
     height: 40vw;
-    margin-left: 4vw;
+    margin-left: 1vw;
     border-radius: 50%;
     background-image: url("../img/linkedinphoto.webp");
     background-size: 100%;
@@ -149,14 +150,6 @@ text-shadow: 1px 1px rgba(50, 50, 50,.5);
 margin: 0;
 }
 
-#stanfordlabel {
-    font-size: 2.8vw;
-    margin-top: 2vw;
-    text-align: center;
-    text-shadow: 1px 1px rgba(95, 95, 95, 0.5);
-    color: white;
-    white-space: wrap;
-}
 
 #resumedownload {
     text-decoration: none;
@@ -166,6 +159,7 @@ margin: 0;
     margin-top: 1vh;
     background-color: rgba(111, 111, 111, 0.6);
     padding: .7vw;
+    margin-top: 3vh;
     
 }
 
@@ -205,6 +199,15 @@ margin: 0;
   align-items: center;
   margin: 0;
   
+}
+
+.contact-hidden {
+    opacity: 0;
+}
+
+.contact-shown {
+    opacity: 1;
+    transition: opacity 800ms;
 }
 
 .contact-item:active {
@@ -272,4 +275,19 @@ width: 50%;
 justify-content: right;
 align-items: center;
 display: flex;
+}
+
+#contact-card-div {
+    width: 50vw;
+    height: 15vw;
+    box-shadow: 0px 1px 10px 1px rgb(32, 32, 32);
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+#contact-card-div:active {
+    background-color: var(--black90);
+    transition: background-color 100ms;
+
 }
