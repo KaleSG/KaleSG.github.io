@@ -42,11 +42,11 @@ body {
     display: flex;
     height: 51vw;
     padding: 1.5vw;
-    background-color: rgba(47, 47, 47, 0.7);
+    background-color: rgba(28, 27, 27, 0.7);
     align-items: center;
     justify-content: center;
     gap: 2vw;
-    border-radius: 5%;
+    border-radius: 3%;
     box-shadow: 2px 2px 3px 2px rgb(46,45,41,.4);
     border-top: 1px solid  rgb(46,45,41,0);;
     white-space: nowrap;
@@ -157,7 +157,7 @@ margin: 0;
     color:  var(--cardinal-light);
     border:  var(--cardinal-light) 1px solid;
     margin-top: 1vh;
-    background-color: rgba(111, 111, 111, 0.6);
+    background-color: rgba(83, 83, 83, 0.6);
     padding: .7vw;
     margin-top: 3vh;
     
