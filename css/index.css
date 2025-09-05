@@ -386,12 +386,13 @@ display: none;
     align-items: center;
     container-type: inline;
     font-size: 3cqw;
+    transition: background-color 300ms, transform 500ms;
 
 }
 
 .dropdown-label > img {
     width: 3cqw;
-    padding: 1cqh;
+    padding: 1cqw;
     margin-right: 1cqw;
     transition: transform 200ms;
 }
@@ -422,4 +423,10 @@ padding: 2%;
 margin-top: 1cqw;
 opacity: 1;
 transition: opacity 200ms, height 200ms;
+}
+
+.dropdown-label:active {
+    background-color: var(--black80);
+    transition: background-color 300ms,transform 300ms;
+    transform: scale(.98);
 }
