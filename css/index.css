@@ -386,7 +386,7 @@ display: none;
     align-items: center;
     container-type: inline;
     font-size: 3cqw;
-    transition: background-color 300ms, transform 500ms;
+    transition: background-color 800ms, transform 500ms;
 
 }
 
