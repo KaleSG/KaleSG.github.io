@@ -431,3 +431,126 @@ transition: opacity 200ms, height 200ms;
     transition: background-color 300ms,transform 300ms;
     transform: scale(.98);
 }
+
+@media screen and (min-width: 768px) {
+    
+    #mainbody {
+        width: 70vw;
+       
+    }
+
+    #intro {
+        height: 20cqw;
+    }
+
+    #blurb {
+        width: inherit;
+        width: 42cqw;
+        height: 23cqw;
+    }
+
+    #portrait {
+        width: 15cqw;
+        height: 15cqw;
+    }
+
+    #name {
+        font-size: 2cqw;
+    }
+
+    #Major {
+        font-size: 1.5cqw;
+    }
+    #undergrad-text {
+        font-size: 1.5cqw;
+    }
+
+    #stanny {
+    position: absolute;
+    width: 4cqw;
+    bottom: .2cqw;
+    right: .2cqw;
+}
+
+#resumedownload {
+    font-size: 1.3cqw;
+    padding: 1cqw;
+}
+
+#resumedownload > img {
+    width: 3cqw;
+    margin-right: 1cqw;
+   
+}
+
+.tab-button-label {
+    font-size: 1.4cqw;
+    line-height: 2.5cqw;
+}
+
+.abtheading {
+    font-size: 2.2cqw;
+}
+
+.abtdesc {
+    
+    font-size: 1cqw;
+    
+}
+
+#aboutme {
+    width: 85%;
+    gap: 1cqw;
+}
+
+#contact-card-div {
+  width: 20cqw;
+  height: 8cqw;
+  box-shadow: 0px 1px 10px 1px rgb(32, 32, 32);
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.contact-icon {
+    width: 4cqw;
+    height: 4qw;
+    padding: 2vw;
+}
+
+.contact-text {
+    color: white;
+    font-size: 1.3cqw;
+    white-space: nowrap;
+    
+}
+
+
+.contact-item {
+  
+  height: 5cqw;
+  margin-top: 1cqw;
+  width: 80%;
+  
+  
+}
+
+.clipboard-icon {
+    width: 50%;
+    margin-bottom: .25%;
+}
+
+.clipboard-hold {
+    display: flex;
+    margin-top: 5%;
+    width: 15%;
+    
+    font-size: 1cqw;
+    flex-direction: column;
+    margin-right: 5%;
+    align-items: center;
+    
+    
+   
+}
+}
